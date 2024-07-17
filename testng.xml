@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name ="url" value="https://parabank.parasoft.com/parabank/index.htm"></parameter>
+<listeners>
+<listener class-name="testcases.ExtentReportManager"></listener>
+</listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testcases.Tc_001_Register"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
